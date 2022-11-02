@@ -3,5 +3,4 @@
 cd ~
 git clone git@github.com:yuxiaoyuan0406/.tmux.git
 
-cd .tmux
-source update
+./.tmux/update
