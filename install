@@ -3,4 +3,6 @@
 cd ~
 git clone git@github.com:yuxiaoyuan0406/.tmux.git
 
-./.tmux/update
+dir=$(dirname $(readlink -f $0))
+
+$dir/.tmux/update
