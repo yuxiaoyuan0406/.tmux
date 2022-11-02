@@ -2,6 +2,11 @@
 
 dir=$(dirname $(readlink -f $0))
 
+cd $dir
+
+git fetch origin master
+git rebase origin/master
+
 cd ~
 ln -s -f $dir/.tmux.conf
 cp $dir/.tmux.conf.local .
