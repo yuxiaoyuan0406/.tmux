@@ -9,4 +9,9 @@ git rebase origin/master
 
 cd ~
 ln -s -f $dir/.tmux.conf
+if [ -f "./.tmux.conf.local" ]; then
+    diff $dir/.tmux.conf.local ./.tmux.conf.local
+    exit 0
+fi
+
 cp $dir/.tmux.conf.local .
